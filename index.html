@@ -1,72 +1,81 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
-  <title>Pragmatik-Org</title>
-  <meta name="description" content="Pragmatik-Org">
-  <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <link rel = "stylesheet"
-   type = "text/css"
-   href = "style.css" />
-
+    <title>Company name</title>
 </head>
 
 <body>
-  <nav>
-    <ul>
-    <li style="float:left"><a href="#home">Pragmatik</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#project">Project</a></li>
-    <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <header>
-    <section class = "header-text">
-      <p>We Are Pragmatik</p>
-    </section>
+    <div class="navigation">
 
-    <section class = "motto-text">
-      <p>"Software Solutions For Everyday Issues"</p>
-    </section>
-  </header>
-  <section id = "about">
-    <h1>About Us</h1>
-    <p class = "about-text">Tragen Sie Ihren Fitnesstrainer am Handgelenk.
-      Wählen Sie aus über 60 Programmen, trainieren Sie unter Anleitung, mit individuellen Trainings- und Ernährungsplänen.
-      An diesem Allrounder ist alles flexibel: Armband, Ziffernblatt und Apps.
-      Auch Einstellungen lassen sich mit einem Swipe ändern.
-      Wasserdicht bis 5ATM**, kennt die Gear Sport weder schlechtes Wetter noch bequeme Ausreden – der perfekte Trainingspartner für Schwimmer und „Rain Runner“.
-    </p>
-  </section>
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
 
-  <section id = "team">
-    <img src="" alt="">
-  </section>
 
-  <section id = "project">
-    <div class="">
+        <a href="#" class="navigation__logo">
+            <img src="" alt="company logo">
+        </a>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Services</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Projects</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
     </div>
-  </section>
 
-  <section id = "services">
+    <header class="header">
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">We are Company name</span>
+                <span class="heading-primary--sub">some slogin just passing by to say hi</span>
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section class="section-about">
+            <div class="wrapper">
+                <h2 class="heading-secondary">Who We Are </h2>
+                <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </section>
+        <section class="section-people">
+            <h2 class="heading-secondary heading-secondary--white">The Team</h2>
+            <!-- Slider missing -->
+        </section>
+        <section class="section-services">
+            <h2 class="heading-secondary">Services
 
-  </section>
-
-  <section id = "contact">
-
-  </section>
-
-  <footer>
-
-  </footer>
-
-
-  <script src="js/scripts.js"></script>
+            </h2>
+        </section>
+    </main>
 </body>
+
 </html>
