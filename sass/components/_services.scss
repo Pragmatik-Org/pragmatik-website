@@ -1,0 +1,46 @@
+.services {
+    display: flex;
+    &__item {
+        flex: 0 0 24%;
+        margin: 0 0.5%;
+        padding: 2rem;
+        transition: all 0.2s;
+        &:hover {
+            background-color: $color-primary;
+            transform: translateY(-0.5rem);
+        }
+    }
+
+    &__icon {
+        font-size: 7rem;
+        display: block;
+        text-align: center;
+        color: $color-primary;
+        transition: all 0.2s;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1rem;
+        transition: all 0.2s;
+    }
+
+    &__description {
+        transition: all 0.2s;
+        word-break: break-all;
+        color: $text-color-2;
+        padding-bottom: 1rem;
+    }
+
+    &__item:hover .services__title {
+        color: $color-white;
+    }
+
+    &__item:hover .services__icon {
+        color: $color-white;
+    }
+
+    &__item:hover .services__description {
+        color: $color-white;
+    }
+}

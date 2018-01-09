@@ -1,0 +1,15 @@
+.slider {
+    text-align: center;
+}
+
+.owl-dot {
+    background-color: $text-color-2;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    &.active {
+        background-color: $color-white;
+    }
+}

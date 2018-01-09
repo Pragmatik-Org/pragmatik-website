@@ -1,0 +1,40 @@
+.navigation {
+    background-color: $color-white;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3000;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__checkbox {
+        display: none;
+    }
+    &__button {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin: 0 0.5rem;
+        padding: 2.5rem 2rem;
+        list-style: none;
+        border-bottom: 5px solid $color-white;
+        transition: all 0.2s;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: lighten($text-color, 10%);
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    &__item:hover {
+        border-color: $color-primary;
+    }
+}
