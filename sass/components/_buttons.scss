@@ -1,0 +1,24 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-weight: 700;
+        padding: 1.5rem 2.5rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-size: $default-font-size;
+        border-radius: 5rem;
+    }
+
+    &__icon {
+        display: inline-block;
+        padding-right: 0.5rem;
+    }
+
+    &--blue {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}

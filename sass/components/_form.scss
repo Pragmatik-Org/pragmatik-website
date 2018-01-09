@@ -1,5 +1,45 @@
-.form {
-    padding: 4rem 0;
-    background-color: $color-white;
+.form-container {
+    padding: 5rem 5rem;
+    background-color: rgba($color-white, 0.9);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+}
+
+.form {
+    &__group {
+        margin-bottom: 1.5rem;
+    }
+    &__input {
+        font-weight: 700;
+        font-size: inherit;
+        color: inherit;
+        background-color: $color-light;
+        width: 90%;
+        border: none;
+        padding: 1.5rem 1rem;
+        border-bottom: 0.4rem solid transparent;
+        transition: all 0.2s;
+
+        &:focus {
+            outline: none;
+            border-color: $color-primary-2;
+        }
+        &:focus:invalid {
+            border-color: $color-primary;
+        }
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        font-weight: 700;
+        display: block;
+        transition: all 0.2s;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
 }

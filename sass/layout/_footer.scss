@@ -1,4 +1,5 @@
 .footer {
+    background: $color-grey-light;
     &__container {
         display: flex;
         justify-content: space-between;
@@ -7,8 +8,26 @@
     &__social-list {
         display: flex;
         list-style: none;
+        align-items: center;
+
         &__item {
-            margin: 1rem 1rem;
+            margin: 0.5rem;
+        }
+
+        &__link {
+            padding: 1rem 0;
+            display: inline-block;
+            color: $color-white;
+        }
+        &__icon {
+            display: inline-block;
+            font-size: 2.5rem;
+        }
+    }
+    &__copyright {
+        color: $color-white;
+        &__rights {
+            font-weight: 300;
         }
     }
 }

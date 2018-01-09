@@ -4,7 +4,6 @@
 .section-people {
     padding: 3rem;
     background-color: $color-primary;
-    min-height: 30rem; //remove later
 }
 
 .section-services {
@@ -12,7 +11,10 @@
 }
 
 .section-contact {
-    margin-top: 6rem;
-    padding-bottom: 6rem;
-    background-color: $color-primary;
+    margin-top: 8rem;
+    padding-bottom: 8rem;
+    background: url(../img/form-background.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
 }
