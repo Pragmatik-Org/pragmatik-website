@@ -6,9 +6,11 @@
     right: 0;
     z-index: 3000;
     position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__checkbox {
         display: none;
     }

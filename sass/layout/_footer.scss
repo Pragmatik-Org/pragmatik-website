@@ -1,0 +1,14 @@
+.footer {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__social-list {
+        display: flex;
+        list-style: none;
+        &__item {
+            margin: 1rem 1rem;
+        }
+    }
+}
