@@ -31,16 +31,16 @@
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">About</a>
+                        <a href="#section-about" class="navigation__link">About</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Services</a>
+                        <a href="#section-people" class="navigation__link">The team</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Projects</a>
+                        <a href="#section-services" class="navigation__link">Services</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Contact</a>
+                        <a href="#section-contact" class="navigation__link">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -56,7 +56,7 @@
         </div>
     </header>
     <main>
-        <section class="section-about">
+        <section class="section-about" id="section-about">
             <div class="wrapper">
                 <h2 class="heading-secondary heading-secondary--underline">Who We Are </h2>
                 <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -64,10 +64,15 @@
                     it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
                     typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
                     sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.</p>
+                    PageMaker including versions of Lorem Ipsum,Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
         </section>
-        <section class="section-people">
+        <section class="section-people" id="section-people">
             <h2 class="heading-secondary heading-secondary--white">The Team</h2>
             <div class="owl-carousel wrapper slider">
                 <div class="slider__item">
@@ -203,7 +208,7 @@
 
             </div>
         </section>
-        <section class="section-services">
+        <section class="section-services" id="section-services">
             <h2 class="heading-secondary heading-secondary--underline">Services</h2>
             <div class="services mg-top-medium wrapper">
                 <div class="services__item">
@@ -232,14 +237,14 @@
                 </div>
             </div>
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="section-contact">
             <svg class="page-separator" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 102" preserveAspectRatio="none">
                 <path d="M0 0 L50 100 L100 0 Z"></path>
             </svg>
             <h2 class="heading-secondary heading-secondary--white mg-top-medium">Contact us</h2>
             <div class="form-container wrapper">
-                <h3 class="heading-tertiary heading-tertiary--gradient">Say something nice</h3>
                 <form action="#" class="form">
+                    <h3 class="heading-tertiary heading-tertiary--gradient">Say something nice</h3>
                     <div class="form__group">
                         <input type="text" class="form__input" placeholder="Full name" id="name" required>
                         <label for="name" class="form__label">
@@ -257,6 +262,21 @@
                             <i class="ion-paper-airplane btn__icon"></i>Submit</button>
                     </div>
                 </form>
+                <div class="form-container__separator"></div>
+                <div class="form-container__info">
+                    <div class="form-container__info__group">
+                        <i class="ion-ios-email form-container__info__icon"></i>
+                        <p class="form-container__info__description">companyname@gmail.com</p>
+                    </div>
+                    <div class="form-container__info__group">
+                        <i class="ion-ios-world form-container__info__icon"></i>
+                        <p class="form-container__info__description">Working all over the world</p>
+                    </div>
+                    <div class="form-container__info__group">
+                        <i class="ion-social-skype form-container__info__icon"></i>
+                        <p class="form-container__info__description">companyid</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
