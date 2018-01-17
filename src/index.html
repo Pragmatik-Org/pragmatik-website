@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="<%= htmlWebpackPlugin.options.lang %>">
 
 <head>
+    
+    <base href="<%= htmlWebpackPlugin.options.base.href %>">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <meta name="description"  content="<%= htmlWebpackPlugin.options.meta.description %>"> 
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="css/vendors/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendors/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="bundle.css">
 
-    <title>Company name</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
 <body>
@@ -76,7 +82,7 @@
             <h2 class="heading-secondary heading-secondary--white">The Team</h2>
             <div class="owl-carousel wrapper slider">
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -86,7 +92,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -96,7 +102,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -106,7 +112,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -116,7 +122,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -126,7 +132,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -136,7 +142,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -146,7 +152,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -156,7 +162,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -166,7 +172,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -176,7 +182,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -186,7 +192,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -196,7 +202,7 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/team/person.png" alt="team member image" class="slider__item__image">
+                    <img src="<%= require('./img/team/person.png')%>" alt="team member image" class="slider__item__image">
                     <div class="slider__item__bottom">
                         <h3 class="slider__item__title">
                             <i class="ion-person slider__item__title__icon"></i>john doe</h3>
@@ -316,8 +322,21 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-    <script src="./js/vendors/owl.carousel.min.js "></script>
-    <script src="./js/script.js "></script>
+    <script src="vendors/js/owl.carousel.min.js "></script>
+    <script src="bundle.js "></script>
+    <script>
+        $('.owl-carousel').owlCarousel();
+
+        $('a[href*=\\#]').click(function(event) {
+            $('html, body').animate(
+                {
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                },
+                500
+            );
+            event.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
